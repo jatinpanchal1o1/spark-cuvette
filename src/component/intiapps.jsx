@@ -51,7 +51,7 @@ function IntegrationApps() {
   ];
 
   return (
-    <section className="w-full max-w-[1248px]">
+    <section className="w-full ">
       <h2 className="self-start mt-20 ml-16 text-5xl font-bold tracking-tighter leading-none text-gray-800 max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         All Link Apps and Integrations
       </h2>

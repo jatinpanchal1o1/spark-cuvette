@@ -6,15 +6,15 @@ function Footer() {
       <div className="flex z-0 flex-col w-full max-md:max-w-full">
         <div className="flex flex-wrap gap-10 items-start self-start max-md:max-w-full">
           <div className="flex gap-2 items-start pb-16 text-base leading-loose min-h-16 min-w-60">
-            <button className="pt-5 pr-7 pb-5 pl-6 text-gray-800 rounded-xl bg-zinc-100 max-md:px-5">
+            <button className="p-6 text-gray-800 rounded-xl bg-zinc-100 max-md:px-5 hover:bg-zinc-200 cursor-pointer">
               Log in
             </button>
-            <button className="pt-5 pr-8 pb-5 pl-6 text-white bg-green-600 rounded-[96px] max-md:px-5">
+            <button className="pt-5 pr-8 pb-5 pl-6 text-white bg-green-600 rounded-[96px] max-md:px-5 hover:bg-green-500 hover:cursor-pointer">
               Sign up free
             </button>
           </div>
-          <nav className="flex flex-wrap gap-10 items-start text-xs font-bold text-gray-800 min-w-60 max-md:max-w-full">
-            <div className="w-[90px]">
+          <nav className="flex flex-wrap gap-10 items-start text-xs font-bold text-gray-800 min-w-60 max-md:max-w-full ">
+            <div className="w-[90px] cursor-pointer">
               <h4>About Spark</h4>
               <ul>
                 <li className="mt-5">
@@ -31,7 +31,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="w-[136px]">
+            <div className="w-[136px] cursor-pointer">
               <h4>Careers</h4>
               <ul>
                 <li className="mt-5">
@@ -48,7 +48,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="w-[132px]">
+            <div className="w-[132px] cursor-pointer">
               <h4>Terms and Conditions</h4>
               <ul>
                 <li className="mt-5">
@@ -105,7 +105,6 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex absolute inset-x-16 top-16 z-0 w-full h-[169px] min-h-[169px]" />
     </footer>
   );
 }

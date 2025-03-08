@@ -3,7 +3,7 @@ import React from "react";
 function TestimonialCard({ backgroundColor = "bg-white" }) {
   return (
     <article
-      className={`flex overflow-hidden relative flex-col grow shrink items-start px-7 py-8 ${backgroundColor} min-w-60 rounded-[32px] w-[502px] max-md:px-5 max-md:max-w-full`}
+      className={`flex overflow-hidden relative flex-col grow shrink items-start px-7 py-8 ${backgroundColor} min-w-60 rounded-[32px] w-full max-md:px-5 max-md:max-w-full`}
     >
       <div className="z-0 self-stretch w-full max-w-[561px] max-md:max-w-full">
         <h3 className="text-2xl font-light tracking-tight leading-none text-black max-md:max-w-full">

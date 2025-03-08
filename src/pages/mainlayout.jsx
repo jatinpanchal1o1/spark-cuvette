@@ -1,10 +1,12 @@
 import React from 'react';
-import Desktop from './desktop';
+import Header from "../component/header";
+import Footer from "../component/footer";
 const Mainlayout = (props) => {
     return (
-        <div>
-            <Desktop/>
-            {props.childern}
+        <div className='flex overflow-hidden p-6 flex-col items-center py-12 bg-neutral-50'>
+            <Header/>
+            {props.children}
+            <Footer/>
         </div>
     );
 }

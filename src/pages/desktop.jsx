@@ -1,16 +1,14 @@
 "use client";
 import React from "react";
-import Header from "../component/header";
 import Hero from "../component/hero";
 import FeatureSection from "../component/featureSection";
 import TestimonialsSection from "../component/testoSection";
 import IntegrationApps from "../component/intiapps";
-import Footer from "../component/footer";
+import Price from "../assets/price.svg";
 
 function Desktop() {
   return (
-    <main className="flex overflow-hidden flex-col items-center py-12 pl-8 bg-neutral-50 max-md:pl-5">
-      <Header />
+    <main className="flex overflow-hidden p-6 flex-col items-center py-12 bg-neutral-50 sm:px-26">
       <Hero />
 
       <FeatureSection
@@ -21,10 +19,10 @@ function Desktop() {
             "Track your engagement over time, monitor revenue and learn what's converting your audience. Make informed updates on the fly to keep them coming back.",
         }}
         image={{
-          src: "https://cdn.builder.io/api/v1/image/assets/TEMP/c1ba27dcfa9ba2d80b5214dad50deffa3aaafe1846a924386c40f1a74eec3777?placeholderIfAbsent=true&apiKey=261c62fc181c4ec0b7c1c0697600ce32",
+          src: {Price},
           alt: "Analytics dashboard visualization",
           containerClassName: "flex overflow-hidden items-start w-[133px]",
-          imageClassName: "object-contain aspect-[0.62] w-[133px]",
+          imageClassName: "object-cover aspect-[0.62] w-full",
         }}
         backgroundColor="bg-white"
         contentWidth="w-[39%]"
@@ -35,10 +33,10 @@ function Desktop() {
             <div className="flex min-h-[215px]" />
             <div className="flex min-h-[215px]" />
             <div className="flex min-h-[215px]" />
-            <div className="flex overflow-hidden items-start w-[133px]">
+            <div className="flex overflow-hidden items-start w-full md:w-5/6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/c1ba27dcfa9ba2d80b5214dad50deffa3aaafe1846a924386c40f1a74eec3777?placeholderIfAbsent=true&apiKey=261c62fc181c4ec0b7c1c0697600ce32"
-                className="object-contain aspect-[0.62] w-[133px]"
+                src={Price}
+                className="object-cover w-full"
                 alt="Analytics visualization"
               />
             </div>
@@ -126,14 +124,13 @@ function Desktop() {
             to demonstrate.
           </p>
         </div>
-        <button className="gap-2.5 self-stretch px-6 py-3 text-base text-green-600 border-2 border-green-600 border-solid rounded-[99px] max-md:px-5">
+        <button className="gap-2.5 self-stretch px-6 py-3 text-base text-green-600 border-2 border-green-600 border-solid rounded-[99px] max-md:px-5 hover:bg-green-600 hover:text-white cursor-pointer">
           Read customer stories
         </button>
       </section>
 
       <TestimonialsSection />
       <IntegrationApps />
-      <Footer />
     </main>
   );
 }

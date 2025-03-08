@@ -1,8 +1,8 @@
 import React from 'react';
-import InputField from './InputField';
-import Button from './Button';
-import Link from './Link';
-import RecaptchaNotice from './RecaptchaNotice';
+import InputField from '../component/login/inputField';
+import Button from '../component/login/button';
+import Link from '../component/login/linklogin';
+import RecaptchaNotice from '../component/login/recaptes';
 
 function SignInForm() {
   return (
