@@ -5,6 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  // base: "/spark-cuvette/",
-  base: "./",
+  base: "/spark-cuvette/",
+  // base: "./",
 })
