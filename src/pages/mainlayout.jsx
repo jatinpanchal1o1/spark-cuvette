@@ -3,7 +3,7 @@ import Header from "../component/header";
 import Footer from "../component/footer";
 const Mainlayout = (props) => {
     return (
-        <div className='flex overflow-hidden p-6 flex-col items-center py-12 bg-neutral-50'>
+        <div className='flex overflow-hidden p-6 flex-col items-center py-12 bg-neutral-50 h-screen'>
             <Header/>
             {props.children}
             <Footer/>

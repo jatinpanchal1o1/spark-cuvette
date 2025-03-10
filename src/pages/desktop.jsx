@@ -5,12 +5,14 @@ import FeatureSection from "../component/featureSection";
 import TestimonialsSection from "../component/testoSection";
 import IntegrationApps from "../component/intiapps";
 import Price from "../assets/price.svg";
+import Header from "../component/header";
+import Footer from "../component/footer";
 
 function Desktop() {
   return (
     <main className="flex overflow-hidden p-6 flex-col items-center py-12 bg-neutral-50 sm:px-26">
+      <Header/>
       <Hero />
-
       <FeatureSection
         reversed={false}
         content={{
@@ -131,6 +133,7 @@ function Desktop() {
 
       <TestimonialsSection />
       <IntegrationApps />
+      <Footer/>
     </main>
   );
 }
