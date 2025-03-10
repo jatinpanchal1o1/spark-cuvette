@@ -1,7 +1,6 @@
 import React from 'react';
 import InputField from '../component/login/inputField';
 import Button from '../component/login/button';
-import LinkLogin from '../component/login/linklogin';
 import { Link } from "react-router-dom";
 import RecaptchaNotice from '../component/login/recaptes';
 import ImageSection from '../component/signup/imageSection';
@@ -44,12 +43,12 @@ function SignInForm() {
           </Button>
         </form>
       </div>
-      <LinkLogin href="/spark-cuvette/forgot-password" className="self-center mt-9 text-green-600 underline">
+      <Link to="/spark-cuvette/forgot-password" className="self-center mt-9 text-green-600 underline">
         Forgot password?
-      </LinkLogin>
+      </Link>
       <div className="flex gap-1 items-start self-center mt-9">
         <p className="text-black">Don't have an account?</p>
-        <LinkLogin href="/spark-cuvette/signup" className="text-green-600 underline">Sign up</LinkLogin>
+        <Link to="/spark-cuvette/signup" className="text-green-600 underline">Sign up</Link>
       </div>
       <RecaptchaNotice className="mt-72 max-md:mt-10" />
       </section>

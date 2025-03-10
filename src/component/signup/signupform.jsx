@@ -47,7 +47,7 @@ function SignUpForm() {
         >
           Create an account
         </h2>
-       <Link to="/spark-cuvette/login"><button type="button" className="text-xs text-green-600 underline">
+       <Link to="/spark-cuvette/login"><button type="button" className="text-xs text-green-600 underline cursor-pointer">
           Sign in instead
         </button>
         </Link>
